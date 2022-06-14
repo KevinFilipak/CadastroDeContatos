@@ -12,7 +12,7 @@ namespace CadastroDeContatos.Classes
         public int Idade { get; set; }
         public string Telefone { get; set; }
 
-        public void BuscarContatos()
+        public void Imprime()
         {
             Console.WriteLine("--------------------------------------------------------------------------------");
             Console.WriteLine($"Nome: {Nome}");

@@ -10,7 +10,7 @@ namespace CadastroDeContatos.Classes
     {
         public static List<Contato> Contatos = new List<Contato>();
 
-        public static void CadastrarContato()
+        public static void CadastrarContatos()
         {
             Contatos.Add(new Contato
             {
@@ -45,11 +45,11 @@ namespace CadastroDeContatos.Classes
         {
             Console.Clear();
             Console.WriteLine("--------------------------------------------------------------------------------");
-            Console.WriteLine("                           Listagem de Clientes                                 ");
+            Console.WriteLine("                           Listagem de Contatos                                 ");
 
             foreach (Contato contato in Contatos)
             {
-                contato.BuscarContatos();
+                contato.Imprime();
             }
 
             Console.WriteLine("--------------------------------------------------------------------------------");
@@ -57,9 +57,45 @@ namespace CadastroDeContatos.Classes
         }
 
 
+        public static void CadastrarNovoContato()
+        {
+            Console.Clear();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("                          Cadastro de Contatos                                  ");
+            Console.WriteLine("--------------------------------------------------------------------------------");
+
+            var _contato = new Contato();
+
+            Console.Write("Digite o Nome: ");
+            _contato.Nome = Console.ReadLine();
+
+            Console.Write("Digite a Idade: ");
+            _contato.Idade = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Digite o Telefone: ");
+            _contato.Telefone = Console.ReadLine();
 
 
 
+            Contatos.Add(_contato);
+            Console.Clear();
+            Console.WriteLine("Contato Cadastrado com Sucesso!");
+            _contato.Imprime();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+
+        }
+
+        public static void BuscarContato()
+        {
+           
+
+        }
+
+        public static void ExcluirContato()
+        {
+
+
+        }
 
 
 

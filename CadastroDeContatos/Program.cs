@@ -11,20 +11,20 @@ class Program
 
         Console.ForegroundColor = ConsoleColor.Green;
 
-        Console.WriteLine("===========================================================================================");
-        Console.WriteLine();
-        Console.WriteLine("          ██    ██   ████████   ████████           ████████   █████      ████████          ");
-        Console.WriteLine("          ██    ██      ██      ██    ██           ██    ██   ██   ██    ██                ");
-        Console.WriteLine("          ██    ██      ██      ████████   █████   ████████   ██    ██   ████████          ");
-        Console.WriteLine("          ██    ██      ██      ██                 ██    ██   ██   ██          ██          ");
-        Console.WriteLine("          ████████      ██      ██                 ██    ██   █████      ████████          ");
-        Console.WriteLine();
-        Console.WriteLine("Created By: Kevin Filipak // Erick Krzyzanovski");
-        Console.WriteLine("===========================================================================================");
+        //Console.WriteLine("===========================================================================================");
+        //Console.WriteLine();
+        //Console.WriteLine("          ██    ██   ████████   ████████           ████████   █████      ████████          ");
+        //Console.WriteLine("          ██    ██      ██      ██    ██           ██    ██   ██   ██    ██                ");
+        //Console.WriteLine("          ██    ██      ██      ████████   █████   ████████   ██    ██   ████████          ");
+        //Console.WriteLine("          ██    ██      ██      ██                 ██    ██   ██   ██          ██          ");
+        //Console.WriteLine("          ████████      ██      ██                 ██    ██   █████      ████████          ");
+        //Console.WriteLine();
+        //Console.WriteLine("Created By: Kevin Filipak // Erick Krzyzanovski");
+        //Console.WriteLine("===========================================================================================");
 
-        Sistema.CadastrarContato();
+        Sistema.CadastrarContatos();
 
-        Thread.Sleep(3000);
+        //Thread.Sleep(3000);
 
 
         Console.Clear();
@@ -41,11 +41,15 @@ class Program
             Console.Clear();
             switch (opcao)
             {
-                case EnumOpcaoMenu.A:  
+                case EnumOpcaoMenu.A:
+                    Sistema.CadastrarNovoContato();
                     break;
                 case EnumOpcaoMenu.B:
+                    Sistema.BuscarContato();
                     break;
                 case EnumOpcaoMenu.C:
+                    Sistema.ImprimirContatos();
+                    Sistema.ExcluirContato();
                     break;
                 case EnumOpcaoMenu.D:
                     Sistema.ImprimirContatos();
