@@ -1,4 +1,4 @@
-# CadastroDeContatos
+# Cadastro De Contatos
 Trabalho de Estrutura de Dados
 
 O programa deverá ter o menu principal da seguinte forma:
