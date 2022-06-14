@@ -81,17 +81,25 @@ namespace CadastroDeContatos.Classes
 
             Console.Write("Digite o Nome: ");
             var nome = Console.ReadLine().ToUpper();
+            int Validar = 0;
 
             foreach (var contato in Contatos.ToList())
             {
                 if (nome == contato.Nome.ToUpper())
                 {
+                    Validar++;
                     Console.WriteLine("--------------------------------------------------------------------------------");
                     Console.WriteLine($"Nome: {contato.Nome}");
                     Console.WriteLine($"Idade: {contato.Idade}");
                     Console.WriteLine($"Telefone: {contato.Telefone}");
                 }
             }
+
+            if (Validar == 0)
+            {
+                Console.WriteLine("Não foi possível encontrar um contato com este nome!");
+            }
+
 
         }
 
@@ -106,14 +114,21 @@ namespace CadastroDeContatos.Classes
 
             Console.WriteLine("Digite o Contato para Excluir:");
             var nome = Console.ReadLine();
+            int Validar = 0;
+
 
             foreach (var contato in Contatos.ToList())
             {
                 if (nome == contato.Nome)
                 {
+                    Validar++;
                     Contatos.Remove(contato);
-
                 }
+            }
+
+            if (Validar == 0)
+            {
+                Console.WriteLine("Não foi possível encontrar um contato com este nome!");
             }
         }
 
