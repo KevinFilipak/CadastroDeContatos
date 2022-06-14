@@ -9,6 +9,7 @@ O programa deverá ter o menu principal da seguinte forma:
 5. Sair
 
 Regras:
+
 → Ao chamar o item de menu 1, os dados do contato serão armazenados. Após a entrada de
 dados, voltar para o menu principal.
 
