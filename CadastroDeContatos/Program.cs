@@ -11,20 +11,20 @@ class Program
 
         Console.ForegroundColor = ConsoleColor.Green;
 
-        //Console.WriteLine("===========================================================================================");
-        //Console.WriteLine();
-        //Console.WriteLine("          ██    ██   ████████   ████████           ████████   █████      ████████          ");
-        //Console.WriteLine("          ██    ██      ██      ██    ██           ██    ██   ██   ██    ██                ");
-        //Console.WriteLine("          ██    ██      ██      ████████   █████   ████████   ██    ██   ████████          ");
-        //Console.WriteLine("          ██    ██      ██      ██                 ██    ██   ██   ██          ██          ");
-        //Console.WriteLine("          ████████      ██      ██                 ██    ██   █████      ████████          ");
-        //Console.WriteLine();
-        //Console.WriteLine("Created By: Kevin Filipak // Erick Krzyzanovski");
-        //Console.WriteLine("===========================================================================================");
+        Console.WriteLine("===========================================================================================");
+        Console.WriteLine();
+        Console.WriteLine("          ██    ██   ████████   ████████           ████████   █████      ████████          ");
+        Console.WriteLine("          ██    ██      ██      ██    ██           ██    ██   ██   ██    ██                ");
+        Console.WriteLine("          ██    ██      ██      ████████   █████   ████████   ██    ██   ████████          ");
+        Console.WriteLine("          ██    ██      ██      ██                 ██    ██   ██   ██          ██          ");
+        Console.WriteLine("          ████████      ██      ██                 ██    ██   █████      ████████          ");
+        Console.WriteLine();
+        Console.WriteLine("Created By: Kevin Filipak // Erick Krzyzanovski");
+        Console.WriteLine("===========================================================================================");
 
         Sistema.CadastrarContatos();
 
-        //Thread.Sleep(3000);
+        Thread.Sleep(3000);
 
 
         Console.Clear();
