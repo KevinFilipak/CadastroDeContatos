@@ -33,7 +33,7 @@ namespace CadastroDeContatos.Classes
             Console.WriteLine("--------------------------------------------------------------------------------");
             Console.WriteLine("                           Listagem de Contatos                                 ");
 
-            foreach (Contato contato in Contatos)
+            foreach (Contato contato in Contatos.OrderBy(a => a.Nome).ToList())
             {
                 contato.Imprime();
             }
@@ -85,7 +85,7 @@ namespace CadastroDeContatos.Classes
 
             foreach (var contato in Contatos.ToList())
             {
-                if (nome == contato.Nome.ToUpper())
+                if (contato.Nome.ToUpper().Contains(nome))
                 {
                     Validar++;
                     Console.WriteLine("--------------------------------------------------------------------------------");
