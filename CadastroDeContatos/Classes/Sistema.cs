@@ -14,20 +14,6 @@ namespace CadastroDeContatos.Classes
         {
             Contatos.Add(new Contato
             {
-                Nome = "Kevin",
-                Idade = 0,
-                Telefone = "+55 (41) 99121-4268",
-            });
-
-            Contatos.Add(new Contato
-            {
-                Nome = "Erick Krzyzanovski",
-                Idade = 0,
-                Telefone = "+55 (41) 99281-8738",
-            });
-
-            Contatos.Add(new Contato
-            {
                 Nome = "Alexandre",
                 Idade = 21,
                 Telefone = "+55 (41) 99988-9999",
@@ -87,30 +73,49 @@ namespace CadastroDeContatos.Classes
 
         public static void BuscarContato()
         {
-           
+            Console.Clear();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("                             Buscar Contato                                     ");
+            Console.WriteLine("--------------------------------------------------------------------------------");
+
+
+            Console.Write("Digite o Nome: ");
+            var nome = Console.ReadLine();
+
+            foreach (var contato in Contatos.ToList())
+            {
+                if (nome == contato.Nome)
+                {
+                    Console.WriteLine("--------------------------------------------------------------------------------");
+                    Console.WriteLine($"Nome: {contato.Nome}");
+                    Console.WriteLine($"Idade: {contato.Idade}");
+                    Console.WriteLine($"Telefone: {contato.Telefone}");
+                }
+            }
 
         }
 
         public static void ExcluirContato()
         {
+            Console.Clear();
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.WriteLine("                            Excluir Contato                                     ");
+            Console.WriteLine("--------------------------------------------------------------------------------");
 
+            Sistema.ImprimirContatos();
 
+            Console.WriteLine("Digite o Contato para Excluir!");
+            var nome = Console.ReadLine();
+
+            foreach (var contato in Contatos.ToList())
+            {
+                if (nome == contato.Nome)
+                {
+                    Contatos.Remove(contato);
+
+                }
+            }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
