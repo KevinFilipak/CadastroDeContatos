@@ -80,11 +80,11 @@ namespace CadastroDeContatos.Classes
 
 
             Console.Write("Digite o Nome: ");
-            var nome = Console.ReadLine();
+            var nome = Console.ReadLine().ToUpper();
 
             foreach (var contato in Contatos.ToList())
             {
-                if (nome == contato.Nome)
+                if (nome == contato.Nome.ToUpper())
                 {
                     Console.WriteLine("--------------------------------------------------------------------------------");
                     Console.WriteLine($"Nome: {contato.Nome}");
@@ -104,7 +104,7 @@ namespace CadastroDeContatos.Classes
 
             Sistema.ImprimirContatos();
 
-            Console.WriteLine("Digite o Contato para Excluir!");
+            Console.WriteLine("Digite o Contato para Excluir:");
             var nome = Console.ReadLine();
 
             foreach (var contato in Contatos.ToList())
