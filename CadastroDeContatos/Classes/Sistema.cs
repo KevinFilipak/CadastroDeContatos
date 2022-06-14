@@ -123,6 +123,7 @@ namespace CadastroDeContatos.Classes
                 {
                     Validar++;
                     Contatos.Remove(contato);
+                    Console.WriteLine("Contato Exclúido com sucesso!");
                 }
             }
 
