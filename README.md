@@ -1,5 +1,6 @@
 # Cadastro De Contatos
 Trabalho de Estrutura de Dados
+Kevin Filipak & Erick Krzyzanovski
 
 O programa deverá ter o menu principal da seguinte forma:
 1. Cadastrar contato
