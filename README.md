@@ -1,5 +1,5 @@
 # Cadastro De Contatos
-Trabalho de Estrutura de Dados
+Trabalho de Estrutura de Dados -
 Kevin Filipak & Erick Krzyzanovski
 
 O programa deverá ter o menu principal da seguinte forma:
